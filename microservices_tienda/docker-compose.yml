@@ -1,0 +1,42 @@
+version: '2'
+services:
+    nginx:
+        image: nginx:alpine
+        volumes:
+            - ./nginx.conf:/etc/nginx/nginx.conf:ro
+        command: [nginx-debug, '-g', 'daemon off;']
+        links:
+            - crearcliente
+            - consultarcliente
+            - modificarcliente
+            - eliminarcliente
+            - creararticulo
+            - consultararticulo
+            - modificararticulo
+            - eliminararticulo
+        ports:
+            - "8080:8080"
+        
+    crearcliente:
+        build: ./cliente/crear
+
+    consultarcliente:
+        build: ./cliente/consultar
+
+    modificarcliente:
+        build: ./cliente/modificar
+
+    eliminarcliente:
+        build: ./cliente/eliminar
+
+    creararticulo:
+        build: ./inventario/crear
+
+    consultararticulo:
+        build: ./inventario/consultar
+
+    modificararticulo:
+        build: ./inventario/modificar
+
+    eliminararticulo:
+        build: ./inventario/eliminar
