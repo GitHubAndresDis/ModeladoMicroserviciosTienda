@@ -117,9 +117,108 @@ RHOSBEN ADHIER CORDOBA AGUILAR 20202099025
       }
 
 
+2. Consulta de un cliente.
+
+  http://localhost:8080/consultarcliente/1
+    
+    Ejemplo de posible resultado esperado
+      
+    {
+      "descripcionError": "", 
+      "estadoproceso": "fallido", 
+      "existeError": "false", 
+      "mensaje": "Cliente no encontrado"
+    }
 
 
+3. Modificación de un cliente.
+
+  http://localhost:8080/modificarcliente/1/Andres
+  
+    Ejemplo de posible resultado esperado
+    
+    {
+      "descripcionError": "", 
+      "estadoproceso": "fallido", 
+      "existeError": "false", 
+      "mensaje": "Cliente no encontrado"
+    }
+    
+    
+4. Eliminación de un cliente.
+
+ http://localhost:8080/eliminarcliente/1
+
+    Ejemplo de posible resultado esperado
+
+    {
+      "descripcionError": "", 
+      "estadoproceso": "exitoso", 
+      "existeError": "false", 
+      "mensaje": "Cliente eliminado exitosamente"
+    }
+    
+    
+5. Creación de un articulo.
+    
+  http://localhost:8080/creararticulo/1/Computadora/4
+  
+    Ejemplo de posible resultado esperado
+
+    {
+      "articulo": {
+                    "cantidad": 4, 
+                    "codigo": "1", 
+                    "nombre": "Computadora"
+                  }, 
+      "descripcionError": "", 
+      "estadoproceso": "exitoso", 
+      "existeError": "false", 
+      "mensaje": "Articulo creado exitosamente"
+    }
 
 
+6. Consulta de un articulo.
+
+  http://localhost:8080/consultararticulo/1
+
+    Ejemplo de posible resultado esperado
+  
+    { 
+      "descripcionError": "", 
+      "estadoproceso": "fallido", 
+      "existeError": "false", 
+      "mensaje": "Articulo no encontrado"
+    }
+  
+
+7. Modificación de un articulo.
+
+  http://localhost:8080/modificararticulo/1/Computadora/4
+  
+    Ejemplo de posible resultado esperado
+    
+    { 
+      "descripcionError": "", 
+      "estadoproceso": "fallido", 
+      "existeError": "false", 
+      "mensaje": "Articulo no encontrado"
+    }
+    
+
+8. Eliminación de un articulo.
+
+  http://localhost:8080/eliminararticulo/1
+  
+    Ejemplo de posible resultado esperado
+    
+    { 
+      "descripcionError": "", 
+      "estadoproceso": "exitoso", 
+      "existeError": "false", 
+      "mensaje": "Articulo eliminado exitosamente"
+    }
+  
+  
 
 
