@@ -97,4 +97,29 @@ RHOSBEN ADHIER CORDOBA AGUILAR 20202099025
 
 
 
+# Test consumo Microservicios - Tienda
+
+  1. Creación de un cliente.
+  
+   http://localhost:8080/crearcliente/2/Rhosben
+     
+     Ejemplo de posible resultado esperado
+     
+     { 
+        "cliente": {
+                    "nit": "2", 
+                    "nombre": "Rhosben"
+                    }, 
+        "descripcionError": "", 
+        "estadoproceso": "exitoso", 
+        "existeError": "false", 
+        "mensaje": "Cliente creado exitosamente"
+      }
+
+
+
+
+
+
+
 
