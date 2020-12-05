@@ -220,5 +220,13 @@ RHOSBEN ADHIER CORDOBA AGUILAR 20202099025
     }
   
   
+  
+# Evidencias pruebas
+
+ ![Imagen](/Modelo%20Arquitectonico/16.%20Resumen%20por%20capas.PNG)
+
+
+
+
 
 
